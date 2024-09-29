@@ -14,7 +14,9 @@ public class Personaje {
 
     public void attack(Personaje objetivo){
         objetivo.health -= this.damage;
-        System.out.println(this.name + " hizo " + this.damage + " de daño a " + objetivo.name);
+        objetivo.health = Math.max(objetivo.health, 0);
+        System.out.println(this.name + " hizo " +
+         this.damage + " de daño a " + objetivo.name);
 
     }
 

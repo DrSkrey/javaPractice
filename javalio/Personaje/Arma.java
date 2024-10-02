@@ -1,3 +1,5 @@
+package Personaje;
+
 public class Arma {
     //features---variable declarations
     public String name;
